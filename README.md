@@ -1,2 +1,2 @@
 # restaurant-page
-Restaurant Page -> Development
+Restaurant Page -> restaurant-page
