@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jcromerohdz/restaurant-page/issues"
   },
-  "homepage": "https://github.com/jcromerohdz/restaurant-page#readme"
+  "homepage": "https://github.com/jcromerohdz/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5"
+  }
 }
