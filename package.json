@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcromerohdz/restaurant-page.git"
+  },
+  "author": "J. Christian Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcromerohdz/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/jcromerohdz/restaurant-page#readme"
+}
