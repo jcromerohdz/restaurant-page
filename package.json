@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jcromerohdz/restaurant-page#readme",
   "devDependencies": {
-    "webpack": "^4.41.5"
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   }
 }
