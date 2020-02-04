@@ -1,1 +1,2 @@
-console.log("WBPACK TESTING SETUP!!!");
+import home from "./home";
+console.log("Import home");
