@@ -50,7 +50,6 @@ export let navBar = () => {
   divNav.appendChild(divLeft);
   divNav.appendChild(divCenter);
   divNav.appendChild(divRight);
-  divHeroHead.appendChild(divNav)
-  console.log(divHeroHead);
+  divHeroHead.appendChild(divNav);
   return divHeroHead;
 };

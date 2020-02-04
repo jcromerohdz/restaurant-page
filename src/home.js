@@ -1,4 +1,6 @@
 import { navBar } from "./header";
+import { bodyContent } from "./body";
+import { footerContent } from "./footer";
 
 const home = () => {
   let containerDiv = document.getElementById("content");
@@ -6,16 +8,16 @@ const home = () => {
   sectionTag.classList.add("hero", "is-fullheight");
   console.log(typeof(sectionTag));
 
-  //   console.log(sectionTag.setAttribute("class", "hero is-fullheight"));
-  //   console.log(navBar());
   sectionTag.appendChild(navBar());
-
+  sectionTag.appendChild(bodyContent());
+  sectionTag.appendChild(footerContent());
   containerDiv.appendChild(sectionTag);
   // containerDiv.innerHTML = sectionTag;
   // console.log(containerDiv);
 
   //   console.log(containerDiv);
 };
+
 
 document.addEventListener("DOMContentLoaded", () => {
   // code here
