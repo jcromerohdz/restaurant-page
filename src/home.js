@@ -1,12 +1,13 @@
 import { navBar } from "./header";
 import { bodyContent } from "./body";
 import { footerContent } from "./footer";
-
-const home = () => {
+console.log("loading home...");
+export const homeT = () => {
+  console.log("Entering Home");
   let containerDiv = document.getElementById("content");
   const sectionTag = document.createElement("section");
   sectionTag.classList.add("hero", "is-fullheight");
-  console.log(typeof(sectionTag));
+  // console.log(typeof(sectionTag));
 
   sectionTag.appendChild(navBar());
   sectionTag.appendChild(bodyContent());
@@ -16,10 +17,13 @@ const home = () => {
   // console.log(containerDiv);
 
   //   console.log(containerDiv);
+  console.log("Exiting Home");
+  return containerDiv
 };
 
+// export default {homeT};
 
-document.addEventListener("DOMContentLoaded", () => {
-  // code here
-  home();
-});
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   home();
+// });

@@ -3,6 +3,7 @@ export let navBar = () => {
   divHeroHead.classList.add('hero-head');
   let divNav = document.createElement("div");
   divNav.classList.add("columns", "is-mobile", "is-marginless", "heading", "has-text-weight-bold", "subtitle", "is-6");
+  divNav.id="navBar";
 
   const divLeft = document.createElement("div");
   divLeft.classList.add("column", "left");
@@ -51,5 +52,7 @@ export let navBar = () => {
   divNav.appendChild(divCenter);
   divNav.appendChild(divRight);
   divHeroHead.appendChild(divNav);
+
+  console.log("Content Created");
   return divHeroHead;
 };
