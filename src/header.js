@@ -1,4 +1,7 @@
 export const navBar = () => {
+  const sectionTag = document.createElement("section");
+  sectionTag.classList.add("hero", "is-fullheight");
+  sectionTag.id = "sectionTag";
   const divHeroHead = document.createElement('div');
   divHeroHead.classList.add('hero-head');
   let divNav = document.createElement("div");
@@ -30,11 +33,11 @@ export const navBar = () => {
   pNavItem3.id = "contactPage";
   divCenter.appendChild(pNavItem3);
 
-  const pNavItem4 = document.createElement("p");
-  pNavItem4.classList.add("navbar-item", "has-text-white");
-  const pNavItemContent4 = document.createTextNode("Orders");
-  pNavItem4.appendChild(pNavItemContent4);
-  divCenter.appendChild(pNavItem4);
+  // const pNavItem4 = document.createElement("p");
+  // pNavItem4.classList.add("navbar-item", "has-text-white");
+  // const pNavItemContent4 = document.createTextNode("Orders");
+  // pNavItem4.appendChild(pNavItemContent4);
+  // divCenter.appendChild(pNavItem4);
 
   const divRight = document.createElement("div");
   divRight.classList.add("column", "right");
@@ -56,6 +59,7 @@ export const navBar = () => {
   divNav.appendChild(divRight);
   divHeroHead.appendChild(divNav);
 
-  console.log("Content Created");
-  return divHeroHead;
+  sectionTag.appendChild(divHeroHead);
+
+  return sectionTag;
 };
