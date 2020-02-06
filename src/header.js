@@ -1,4 +1,4 @@
-export let navBar = () => {
+export const navBar = () => {
   const divHeroHead = document.createElement('div');
   divHeroHead.classList.add('hero-head');
   let divNav = document.createElement("div");
@@ -10,6 +10,7 @@ export let navBar = () => {
   const pNavItem1 = document.createElement("p");
   pNavItem1.classList.add("navbar-item", "has-text-white");
   const pNavItemContent1 = document.createTextNode("La Delicia!");
+  pNavItem1.id="homePage";
   pNavItem1.appendChild(pNavItemContent1);
   divLeft.appendChild(pNavItem1);
 
@@ -18,6 +19,7 @@ export let navBar = () => {
   const pNavItem2 = document.createElement("p");
   pNavItem2.classList.add("navbar-item", "has-text-white");
   const pNavItemContent2 = document.createTextNode("Menu");
+  pNavItem2.id = "menuPage"
   pNavItem2.appendChild(pNavItemContent2);
   divCenter.appendChild(pNavItem2);
 
@@ -25,6 +27,7 @@ export let navBar = () => {
   pNavItem3.classList.add("navbar-item", "has-text-white");
   const pNavItemContent3 = document.createTextNode("Contact Us");
   pNavItem3.appendChild(pNavItemContent3);
+  pNavItem3.id = "contactPage";
   divCenter.appendChild(pNavItem3);
 
   const pNavItem4 = document.createElement("p");

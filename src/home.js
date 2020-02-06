@@ -2,7 +2,7 @@ import { navBar } from "./header";
 import { bodyContent } from "./body";
 import { footerContent } from "./footer";
 console.log("loading home...");
-export const homeT = () => {
+export const home = () => {
   console.log("Entering Home");
   let containerDiv = document.getElementById("content");
   const sectionTag = document.createElement("section");
