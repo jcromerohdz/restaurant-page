@@ -8,7 +8,7 @@ You can find the original project specification [here](https://www.theodinprojec
 
 ## Live Version
 
-[here](https://raw.githack.com/jcromerohdz/js-tic-tac-toe/ticTacToe/index.html)
+[here](https://raw.githack.com/jcromerohdz/js-tic-tac-toe/ticTacToe/)
 
 ## Built With:
 
