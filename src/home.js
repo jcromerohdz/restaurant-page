@@ -1,10 +1,12 @@
-import { bodyContent } from "./body";
-import { footerContent } from "./footer";
+import bodyContent from './body';
+import footerContent from './footer';
 
-export const home = (sectionTag) => {
-  let containerDiv = document.getElementById("content");
+const home = (sectionTag) => {
+  const containerDiv = document.getElementById('content');
   sectionTag.childNodes[1].appendChild(bodyContent());
   sectionTag.appendChild(footerContent());
   containerDiv.appendChild(sectionTag);
-  return containerDiv
+  return containerDiv;
 };
+
+export default home;

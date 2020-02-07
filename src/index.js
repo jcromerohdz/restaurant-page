@@ -1,48 +1,47 @@
-import { navBar } from "./header";
-import { bodyContent } from "./body";
-import { menu } from "./menu";
-import { contactUs } from "./contact";
-import { home } from "./home";
+import navBar from './header';
+import bodyContent from './body';
+import menu from './menu';
+import contactUs from './contact';
+import home from './home';
 
 
-let content = document.getElementById('content');
+const content = document.getElementById('content');
 const headerHero = document.createElement('header');
 headerHero.classList.add('hero-body');
-headerHero.id = "sub-content";
+headerHero.id = 'sub-content';
 
 content.appendChild(navBar());
-let sectionTag = document.getElementById('sectionTag');
+const sectionTag = document.getElementById('sectionTag');
 sectionTag.appendChild(headerHero);
 
 const homePage = document.getElementById('homePage');
-const menuPage =  document.getElementById('menuPage');
-const contactPage =  document.getElementById('contactPage');
+const menuPage = document.getElementById('menuPage');
+const contactPage = document.getElementById('contactPage');
 
 home(sectionTag);
 
-const clearContent = () =>{
-  let cleanContent = document.getElementById("sub-content");
-  cleanContent.innerHTML = "";
+const clearContent = () => {
+  const cleanContent = document.getElementById('sub-content');
+  cleanContent.innerHTML = '';
   return cleanContent;
-}
+};
 
-const homeDisplay = (event) =>{
+const homeDisplay = () => {
   clearContent();
   sectionTag.childNodes[1].appendChild(bodyContent());
-}
+};
 
-const menuDisplay = (event) =>{
+const menuDisplay = () => {
   clearContent();
   sectionTag.childNodes[1].appendChild(menu());
-}
+};
 
-const contactDisplay = (event) =>{
-  // alert("Contact Page!");
+const contactDisplay = () => {
   clearContent();
   sectionTag.childNodes[1].appendChild(contactUs());
-}
+};
 
 
-homePage.addEventListener("click", homeDisplay);
-menuPage.addEventListener("click", menuDisplay);
-contactPage.addEventListener("click", contactDisplay);
+homePage.addEventListener('click', homeDisplay);
+menuPage.addEventListener('click', menuDisplay);
+contactPage.addEventListener('click', contactDisplay);
