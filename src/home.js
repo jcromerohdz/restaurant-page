@@ -2,7 +2,7 @@
 import { bodyContent } from "./body";
 import { footerContent } from "./footer";
 console.log("loading home...");
-export const home = () => {
+export const home = (sectionTag) => {
   console.log("Entering Home");
   console.log(sectionTag);
   console.log("%%%%%%%%%%%");
@@ -12,7 +12,7 @@ export const home = () => {
   // console.log(typeof(sectionTag));
 
   // sectionTag.appendChild(navBar());
-  sectionTag.appendChild(bodyContent());
+  sectionTag.childNodes[1].appendChild(bodyContent());
   sectionTag.appendChild(footerContent());
   containerDiv.appendChild(sectionTag);
 
@@ -22,10 +22,3 @@ export const home = () => {
   console.log("Exiting Home");
   return containerDiv
 };
-
-// export default {homeT};
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   home();
-// });

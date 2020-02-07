@@ -1,12 +1,13 @@
-export const menu = (sectionTag) => {
+export const menu = () => {
   console.log("Entering Menu");
   let containerDiv = document.getElementById("content");
 
-  const headerHero = document.createElement('header');
-  headerHero.classList.add('hero-body');
+  // const headerHero = document.createElement('header');
+  // headerHero.classList.add('hero-body');
   const textContainer =  document.createElement('div');
   textContainer.classList.add("is-overlay", "has-text-centered", "single-spaced");
   textContainer.style.top= "150px";
+
 
   const textTitle = document.createElement('h1');
   textTitle.classList.add("subtitle", "is-3", "has-text-weight-light", "has-text-white");
@@ -14,14 +15,29 @@ export const menu = (sectionTag) => {
   textTitle.appendChild(textContent1);
   textContainer.appendChild(textTitle);
 
-  const textSubtitle = document.createElement('p');
-  textSubtitle.classList.add("title", "is-1", "has-text-white")
-  const textContent2 = document.createTextNode("Our Menu");
-  textSubtitle.appendChild(textContent2);
-  textContainer.appendChild(textSubtitle);
+  const menutItem1 = document.createElement('p');
+  menutItem1.classList.add("title", "is-2", "has-text-white");
+  const menuItemContent1 = document.createTextNode("Top Sirloin: $25.00");
+  menutItem1.appendChild(menuItemContent1);
+  textContainer.appendChild(menutItem1);
 
-  headerHero.appendChild(textContainer);
-  sectionTag.appendChild(headerHero);
+  const menutItem2 = document.createElement('p');
+  menutItem2.classList.add("title", "is-2", "has-text-white");
+  const menuItemContent2 = document.createTextNode("Tomahawk: $34.00");
+  menutItem2.appendChild(menuItemContent2);
+  textContainer.appendChild(menutItem2);
 
-  containerDiv.appendChild(sectionTag);
+  const menutItem3 = document.createElement('p');
+  menutItem3.classList.add("title", "is-2", "has-text-white");
+  const menuItemContent3 = document.createTextNode("Chicken Breast: $25.00");
+  menutItem3.appendChild(menuItemContent3);
+  textContainer.appendChild(menutItem3);
+
+  const menutItem4 = document.createElement('p');
+  menutItem4.classList.add("title", "is-2", "has-text-white");
+  const menuItemContent4 = document.createTextNode("Shrimps and Mashrooms: $30.00");
+  menutItem4.appendChild(menuItemContent4);
+  textContainer.appendChild(menutItem4);
+
+  return textContainer;
 };

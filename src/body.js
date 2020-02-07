@@ -1,7 +1,7 @@
 export let bodyContent = () => {
-    const headerHero = document.createElement('header');
-    headerHero.classList.add('hero-body');
-    headerHero.id = "sub-content";
+    // const headerHero = document.createElement('header');
+    // headerHero.classList.add('hero-body');
+    // headerHero.id = "sub-content";
     const textContainer =  document.createElement('div');
     textContainer.classList.add("is-overlay", "has-text-centered", "single-spaced");
     textContainer.style.top= "150px";
@@ -18,7 +18,7 @@ export let bodyContent = () => {
     textSubtitle.appendChild(textContent2);
     textContainer.appendChild(textSubtitle);
 
-    headerHero.appendChild(textContainer);
+    // headerHero.appendChild(textContainer);
 
-    return headerHero;
+    return textContainer;
 };

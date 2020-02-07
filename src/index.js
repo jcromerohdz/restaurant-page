@@ -1,60 +1,51 @@
 import { navBar } from "./header";
+import { bodyContent } from "./body";
 import { menu } from "./menu";
 import { contactUs } from "./contact";
 import { home } from "./home";
-console.log("Import home");
+
 
 let content = document.getElementById('content');
+const headerHero = document.createElement('header');
+headerHero.classList.add('hero-body');
+headerHero.id = "sub-content";
 
-
-// console.log(typeof(sectionTag));
-// home();
 content.appendChild(navBar());
 let sectionTag = document.getElementById('sectionTag');
+sectionTag.appendChild(headerHero);
 
-// home(sectionTag);
-// content.appendChild(sectionTag);
+const homePage = document.getElementById('homePage');
+const menuPage =  document.getElementById('menuPage');
+const contactPage =  document.getElementById('contactPage');
 
-// content.appendChild(navBar);
-// navBar();
-// let sectionTag = document.getElementById('sectionTag');
-// home(sectionTag);
+home(sectionTag);
+
+const clearContent = () =>{
+  let cleanContent = document.getElementById("sub-content");
+  cleanContent.innerHTML = "";
+  return cleanContent;
+}
+
+const homeDisplay = (event) =>{
+  alert("Home Page!");
+  clearContent();
+  sectionTag.childNodes[1].appendChild(bodyContent());
+}
+
+const menuDisplay = (event) =>{
+  alert("Menu Page!");
+  clearContent();
+  sectionTag.childNodes[1].appendChild(menu());
+}
+
+const contactDisplay = (event) =>{
+  alert("Contact Page!");
+  clearContent();
+  sectionTag.childNodes[1].appendChild(contactUs());
+
+}
 
 
-  // let contentDiv = document.getElementById('content');
-  //
-  // const homePage = document.getElementById('homePage');
-  // console.log(homePage);
-  const menuPage =  document.getElementById('menuPage');
-  console.log(menuPage);
-  // const contactPage =  document.getElementById('contactPage');
-  // console.log(contactPage);
-  //
-  home(sectionTag);
-  const homeDisplay = (event) =>{
-    alert("Home Page!");
-    document.getElementById("sub-content").innerHTML="";
-    // console.log(cleanContent2);
-    // cleanContent2.innerHTML = "";
-    // console.log(cleanContent2);
-    // cleanContent.innerHTML = "";
-    // home(sectionTag);
-  }
-
-  const menuDisplay = (event) =>{
-    alert("Menu Page!");
-    let cleanContent = document.querySelector(".hero-body");
-    console.log(cleanContent);
-    cleanContent.innerHTML = "";
-    menu(sectionTag);
-  }
-
-  const contactDisplay = (event) =>{
-    alert("Contact Page!");
-    // contentDiv.innerHTML = "";
-    // contactUs();
-  }
-
-  homePage.addEventListener("click", homeDisplay);
-  menuPage.addEventListener("click", menuDisplay);
-  contactPage.addEventListener("click", contactDisplay);
+homePage.addEventListener("click", homeDisplay);
+menuPage.addEventListener("click", menuDisplay);
+contactPage.addEventListener("click", contactDisplay);
