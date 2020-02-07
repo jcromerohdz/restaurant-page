@@ -27,22 +27,19 @@ const clearContent = () =>{
 }
 
 const homeDisplay = (event) =>{
-  alert("Home Page!");
   clearContent();
   sectionTag.childNodes[1].appendChild(bodyContent());
 }
 
 const menuDisplay = (event) =>{
-  alert("Menu Page!");
   clearContent();
   sectionTag.childNodes[1].appendChild(menu());
 }
 
 const contactDisplay = (event) =>{
-  alert("Contact Page!");
+  // alert("Contact Page!");
   clearContent();
   sectionTag.childNodes[1].appendChild(contactUs());
-
 }
 
 

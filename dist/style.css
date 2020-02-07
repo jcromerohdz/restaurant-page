@@ -1,5 +1,7 @@
 .hero {
-    background: url(img/restaurant.jpg) no-repeat center center fixed; 
+    background: url(img/restaurant.jpg) no-repeat center center fixed;
+    background-color: #4f3222;
+    background-blend-mode: screen;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

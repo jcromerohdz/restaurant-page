@@ -11,8 +11,8 @@ export let footerContent = () => {
     divA.id = "a";
     divA.classList.add("center-column");
     const pContent = document.createElement('p');
-    pContent.classList.add("has-text-centered", "has-text-white", "title", "is-1");
-    const textContent = document.createTextNode("Our dishes please even the most demanding palate");
+    pContent.classList.add("has-text-centered", "has-text-black", "title", "is-1");
+    const textContent = document.createTextNode("Our dishes ");
     pContent.appendChild(textContent);
     divA.appendChild(pContent)
 
@@ -20,7 +20,7 @@ export let footerContent = () => {
     divB.id = "b";
     const pContentOne = document.createElement('p');
     const imgPictureOne = document.createElement('img');
-    imgPictureOne.src="https://upload.wikimedia.org/wikipedia/commons/3/30/London_broil.jpg";
+    imgPictureOne.src="https://i.pinimg.com/originals/01/de/63/01de637694afffdb842ae6439859a3f2.jpg";
     pContentOne.appendChild(imgPictureOne);
     divB.appendChild(pContentOne);
 
@@ -44,7 +44,7 @@ export let footerContent = () => {
     divE.id = "e";
     const pContentFour = document.createElement('p');
     const imgPictureFour = document.createElement('img');
-    imgPictureFour.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXwX0odKHuX1qezoCUYQvSg7df4k9xLAoq_J-3xJ1Q-Ps9TRtuBg&s";
+    imgPictureFour.src="https://i.pinimg.com/originals/04/50/d4/0450d4249202309efc191d0235bba39e.jpg";
     pContentFour.appendChild(imgPictureFour);
     divE.appendChild(pContentFour);
 
@@ -55,20 +55,5 @@ export let footerContent = () => {
     divGrid.appendChild(divE);
     mainHero.appendChild(divGrid);
 
-    console.log(mainHero.appendChild(divGrid));
-  // <!-- Footer -->
-  // <!-- <main class="hero-foo center" style="padding: 2rem;">
-  //     <div id="grid" style="width: 768px;">
-  //       <div id="a" class="center-column">
-  //         <p class="has-text-centered has-text-white title is-1">
-  //           Our dishes please even the most demanding palate
-  //         </p>
-  //       </div>
-  //       <div id="b"><p><img src="https://upload.wikimedia.org/wikipedia/commons/3/30/London_broil.jpg" alt=""></p></div>
-  //       <div id="c"><p><img src="https://www.thespruceeats.com/thmb/iWn8EpeHjiiX1EyNdQsxvhS0GVs=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/tomahawk-rib-eye-steak-2313425-Hero-5b5725cb46e0fb0037e009ab.jpg" alt=""></p></div>
-  //       <div id="d"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXwX0odKHuX1qezoCUYQvSg7df4k9xLAoq_J-3xJ1Q-Ps9TRtuBg&s" alt=""></p></div>
-  //       <div id="e"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZDYnYO1E7THiCumw-klF8y0zP7rly-7Qgkw-qYVD8zVmxVik&s" alt=""></p></div>
-  //     </div>
-  //   </main>
   return mainHero
 }
