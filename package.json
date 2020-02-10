@@ -1,0 +1,26 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcromerohdz/restaurant-page.git"
+  },
+  "author": "J. Christian Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcromerohdz/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/jcromerohdz/restaurant-page#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
